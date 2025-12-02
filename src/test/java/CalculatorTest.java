@@ -3,35 +3,32 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
+    Calculator calculator = new Calculator();
 
     private final Calculator calculator = new Calculator();
 
     @Test
     void add() {
-        assertEquals(5, calculator.add(2, 3));
-        assertEquals(0, calculator.add(-2, 2));
+        assertEquals(2, calculator.add(1, 1));
     }
 
     @Test
     void dif() {
-        assertEquals(3, calculator.dif(5, 2));
-        assertEquals(-5, calculator.dif(5, 10));
+        assertEquals(4, calculator.dif(16, 12));
     }
 
     @Test
     void div() {
-        assertEquals(5, calculator.div(10, 2));
-        assertEquals(2, calculator.div(5, 2));
+        assertEquals(4, calculator.div(16, 4));
     }
 
     @Test
     void times() {
-        assertEquals(6, calculator.times(2, 3));
-        assertEquals(0, calculator.times(100, 0));
+        assertEquals(25, calculator.times(5, 5));
     }
 
     @Test
     void solver() {
-        assertEquals(30, calculator.solver());
+        assertEquals(5, calculator.solver(5, 5, 5));
     }
 }

@@ -15,13 +15,9 @@ public class Calculator {
     public int times(int a, int b) {
         return a * b;
     }
-
-    public int solver() {
-        int result = add(10, 5);
-        return times(result, 2);
+  
+    public int solver(int a, int b, int c) {
+        int sum = add(a, b);
+        return dif(sum, c);
     }
 }
-
-//Код соответствует заданию.
-//Соблюден Code Style.
-//Программа запускается и работает локально.
