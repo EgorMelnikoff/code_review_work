@@ -15,8 +15,7 @@ public class Calculator {
     public int times(int a, int b) {
         return a * b;
     }
-
-    //Сложение a и b и вычитание из суммы с
+  
     public int solver(int a, int b, int c) {
         int sum = add(a, b);
         return dif(sum, c);
